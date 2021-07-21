@@ -3,9 +3,9 @@ pipeline {
 
    stages {
    
-     stage('Install Dependencies') { 
+     stage('Cloning') { 
         steps { 
-           sh 'npm install' 
+           sh 'echo "This is cloning stage" ' 
         }
      }
  
