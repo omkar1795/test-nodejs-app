@@ -1,5 +1,4 @@
-pipeline { 
-  
+pipeline {   
    agent any
 
    stages {
@@ -9,7 +8,7 @@ pipeline {
            sh 'npm install' 
         }
      }
-     
+ 
      stage('Test') { 
         steps { 
            sh 'echo "testing application..."'
@@ -18,11 +17,9 @@ pipeline {
 
          stage("Deploy application") { 
          steps { 
-           sh 'echo "deploying application..."'
+           sh 'echo "deploying nodejs application..."'
          }
+     } 
+  }
 
-     }
-  
-   	}
-
-   }
+}
